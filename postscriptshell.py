@@ -1,5 +1,10 @@
 import re
 
+# Developer: Mathew Merrick
+# WSU ID: 11436439
+# Date Finished: 10-8-2016
+# Built and run on Windows Python 3.5.2, but compatible with Linux, Python 3.4.2
+
 # Flip this for verbose error handling
 debugging = False
 
@@ -606,6 +611,7 @@ functions = {
 # Parse checks to see if the argument is a string or a code array, as
 # psFor() may send a code array if a code array is nested.
 def parse(s):
+    
     # a for loop with a code array may pass 
     if (type(s) is str):
         tokens = tokenize(s)
@@ -725,6 +731,9 @@ def debug(*s):
     if debugging: 
         print(*s)
     return ""
+
+
+
 
 
 if __name__ == '__main__':
