@@ -727,9 +727,9 @@ def testParsing():
 
 
 # used for reporting verbose exceptions when they are thrown
-def debug(*s): 
+def debug(s): 
     if debugging: 
-        print(*s)
+        print(s)
     return ""
 
 
